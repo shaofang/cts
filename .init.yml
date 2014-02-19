@@ -1,0 +1,18 @@
+##python: 2.7
+
+install:
+  - echo "Preparation..."
+  - wget -c https://dl.google.com/dl/android/cts/android-cts-4.2_r4-linux_x86-arm.zip
+#  - wget -c https://dl.google.com/dl/android/cts/android-cts-media-1.0.zip
+  - unzip android-cts-4.2_r4-linux_x86-arm.zip
+#  - unzip android-cts-media-1.0.zip
+#  - adb install 
+
+before_script:
+  - echo "Before script..."
+
+script:
+  - echo "Running script..."
+
+after_script:
+  - echo "after_script"
