@@ -6,7 +6,8 @@ install:
 #  - wget -c https://dl.google.com/dl/android/cts/android-cts-media-1.0.zip
   - unzip android-cts-4.2_r4-linux_x86-arm.zip
 #  - unzip android-cts-media-1.0.zip
-#  - adb install 
+  - adb install ./android-cts/repository/testcases/CtsDelegatingAccessibilityService.apk
+  - adb install ./android-cts/repository/testcases/CtsDeviceAdmin.apk
 
 before_script:
   - echo "Before script..."
